@@ -1,0 +1,93 @@
+@use 'variables';
+$font-family-info: 'Permanent Marker', cursive;
+$font-family: 'Montserrat', sans-serif;
+
+
+  *{
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+        font-family: $font-family;
+    }
+
+    body{
+        background-color: variables.$primary;
+    }
+//image logo
+    .logo{
+        display: flex;
+        justify-content: space-around;
+        width: 450px;
+        margin: 1em auto;
+        img{
+            width: 300px;
+        }
+        .pokeBall{
+            width: 250px;
+            margin-left: 2em;
+        }
+    }
+    
+   
+//pokemon card main div
+    .card{
+        margin: 15px;
+        width: 30%;
+        box-shadow: 0 3px 10px rgba(200, 200, 200, 0.9);
+        border-radius: 10px;
+        position: relative;
+        overflow: hidden;
+        background-color: rgb(250, 234, 212);
+        text-align: center;
+        color: variables.$text-color;
+        h2{
+            color: variables.$primary;
+            font-size: 30px;
+            font-family:  'Permanent Marker', cursive;
+        }
+    }
+
+    //Pokemon info -> abilities and types
+    .info{
+        text-align: left;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px;
+        background-color: variables.$third;
+        border-top: 4px solid variables.$primary;
+
+     
+    }
+    //upper section of pokemon card
+    #pokeCard{
+        width: 90%;
+        margin: auto; 
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+    
+    .poke-name{
+        color: variables.$secondary;
+        font-size: 20px;
+        padding: 5px;
+    }
+    
+    //search input
+    #searchWrapper
+    {
+        width: 100%;
+        
+        input{
+            width: 85%;
+            margin: 2em auto;
+            margin-left: 6em;
+            padding: 15px;
+            border-radius: 5px;    
+        }
+        input::placeholder{
+            font-size: 20px;
+        }
+    } 
+    
